@@ -1,15 +1,17 @@
-1) In order to run the program, 
+1) You have to install an ide for c/cpp, and install mpich2-1.4.1 in order to run this program in parallel way, and for using cuda you have to install all the cuda libraries (search in Nvidia sites and forums)
+
+2) In order to run the program, 
 please enter the full path of the points file, into the array: "fileFullPath" (that exist in "readAFile" method in the HandleFile.cpp file).
 
 For example, I have a file named "data1.txt" in my C drive, so the full path will be: 
 "C:\\data1.txt"
 
 
-2) Please choose the number of processes to be less or equal to the num of alpha's that the algorithm has to check.
+3) Please choose the number of processes to be less or equal to the num of alpha's that the algorithm has to check.
 For example : alpha0 = 0.1 , alphaMax = 0.9 , so we have 9 alphas to share , and in this case the number of processes will be maximum 9. 
 (This is the way I chose to make my code to run in parallel , so each processes gets is own alpha more details later)
 
-3) OutPut file -> please enter a valid path into the array: "fileFullPath" (that exist in ""printResultsReport" method in the HandleFile.cpp file).
+4) OutPut file -> please enter a valid path into the array: "fileFullPath" (that exist in ""printResultsReport" method in the HandleFile.cpp file).
 we required to write the report into file named: "output.txt" in the project directory,
 so if I saved the project on the desktop of the cudaUser (connecting via vmware Horizon Client in Afeka)
 so the full path will be: ""
